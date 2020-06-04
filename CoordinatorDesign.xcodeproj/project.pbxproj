@@ -91,7 +91,6 @@
 				44D3804C248865C300D589D9 /* Assets.xcassets */,
 				44D3804E248865C300D589D9 /* LaunchScreen.storyboard */,
 				44D38051248865C300D589D9 /* Info.plist */,
-				44D380572488665C00D589D9 /* Coordinator.swift */,
 				44D380592488672200D589D9 /* Storyboarded.swift */,
 			);
 			path = CoordinatorDesign;
@@ -110,6 +109,7 @@
 		44D380642488760E00D589D9 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				44D380572488665C00D589D9 /* Coordinator.swift */,
 				44D3805D24886A0200D589D9 /* AppCoordinator.swift */,
 				44D380652488764300D589D9 /* HomeCoordinator.swift */,
 				44D380672488778F00D589D9 /* BuyCoordinator.swift */,
