@@ -9,7 +9,10 @@
 import UIKit
 
 protocol Coordinator: class {
+    
+    /// maintains child childCoordinators
     var childCoordinators: [Coordinator] { get set }
+    
     var navigationController: UINavigationController { get set }
 
     func childDidFinish(_ child: Coordinator?)
@@ -18,6 +21,8 @@ protocol Coordinator: class {
 
 extension Coordinator {
     
+    /// this is reponsible to remove  child coordinator, once view controller is popped out
+    /// - Parameter childCoordinator: child coordinator
     func childDidFinish(_ childCoordinator: Coordinator?) {
         for (index, coordinator) in childCoordinators.enumerated() {
             if coordinator === childCoordinator {

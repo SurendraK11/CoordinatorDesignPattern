@@ -15,3 +15,9 @@ class BuyViewController: UIViewController, Storyboarded {
         print("deinit - BuyViewController")
     }
 }
+
+extension BuyViewController: Coordinated {
+    func getCoordinator() -> Coordinator? {
+        return coordinator
+    }
+}

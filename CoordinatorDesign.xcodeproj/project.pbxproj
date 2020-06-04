@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		444030CB2489259000C5E3A7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444030CA2489259000C5E3A7 /* UIViewController.swift */; };
 		44D38044248865BE00D589D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D38043248865BE00D589D9 /* AppDelegate.swift */; };
 		44D38046248865BE00D589D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D38045248865BE00D589D9 /* SceneDelegate.swift */; };
 		44D38048248865BE00D589D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D38047248865BE00D589D9 /* HomeViewController.swift */; };
@@ -22,10 +21,10 @@
 		44D380662488764300D589D9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D380652488764300D589D9 /* HomeCoordinator.swift */; };
 		44D380682488778F00D589D9 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D380672488778F00D589D9 /* BuyCoordinator.swift */; };
 		44D3806A248877B800D589D9 /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D38069248877B800D589D9 /* CreateAccountCoordinator.swift */; };
+		44EC2ECA24894918008CF920 /* Coordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EC2EC924894918008CF920 /* Coordinated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		444030CA2489259000C5E3A7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		44D38040248865BE00D589D9 /* CoordinatorDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D38043248865BE00D589D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D38045248865BE00D589D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		44D380652488764300D589D9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		44D380672488778F00D589D9 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		44D38069248877B800D589D9 /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
+		44EC2EC924894918008CF920 /* Coordinated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		444030C7248916BB00C5E3A7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				444030CA2489259000C5E3A7 /* UIViewController.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		44D38037248865BE00D589D9 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +74,6 @@
 		44D38042248865BE00D589D9 /* CoordinatorDesign */ = {
 			isa = PBXGroup;
 			children = (
-				444030C7248916BB00C5E3A7 /* Extensions */,
 				44D380642488760E00D589D9 /* Coordinators */,
 				44D380632488715E00D589D9 /* ViewControllers */,
 				44D38043248865BE00D589D9 /* AppDelegate.swift */,
@@ -110,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				44D380572488665C00D589D9 /* Coordinator.swift */,
+				44EC2EC924894918008CF920 /* Coordinated.swift */,
 				44D3805D24886A0200D589D9 /* AppCoordinator.swift */,
 				44D380652488764300D589D9 /* HomeCoordinator.swift */,
 				44D380672488778F00D589D9 /* BuyCoordinator.swift */,
@@ -191,7 +183,6 @@
 			files = (
 				44D380582488665C00D589D9 /* Coordinator.swift in Sources */,
 				44D3805E24886A0200D589D9 /* AppCoordinator.swift in Sources */,
-				444030CB2489259000C5E3A7 /* UIViewController.swift in Sources */,
 				44D380662488764300D589D9 /* HomeCoordinator.swift in Sources */,
 				44D380682488778F00D589D9 /* BuyCoordinator.swift in Sources */,
 				44D38048248865BE00D589D9 /* HomeViewController.swift in Sources */,
@@ -200,6 +191,7 @@
 				44D3806224886EF500D589D9 /* CreateAccountViewController.swift in Sources */,
 				44D38044248865BE00D589D9 /* AppDelegate.swift in Sources */,
 				44D3806024886EBE00D589D9 /* BuyViewController.swift in Sources */,
+				44EC2ECA24894918008CF920 /* Coordinated.swift in Sources */,
 				44D38046248865BE00D589D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

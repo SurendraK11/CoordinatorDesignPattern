@@ -61,12 +61,8 @@ extension HomeCoordinator: UINavigationControllerDelegate {
         }
         
         //if control reached here it means navigationController did pop a view controller
-        if let buyViewController = fromViewController as? BuyViewController {
-            childDidFinish(buyViewController.coordinator)
-        }
-        
-        if let createAccountViewController = fromViewController as? CreateAccountViewController {
-            childDidFinish(createAccountViewController.coordinator)
+        if let popedVC = fromViewController as? Coordinated {
+            childDidFinish(popedVC.getCoordinator())
         }
     }
 }

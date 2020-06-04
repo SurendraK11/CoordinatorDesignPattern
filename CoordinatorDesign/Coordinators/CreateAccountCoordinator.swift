@@ -12,16 +12,14 @@ protocol CreateAccountCoordinatorProtocol: Coordinator {
     
 }
 
-class CreateAccountCoordinator {
+class CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-}
-
-extension CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
+    
     func start() {
         let vc = CreateAccountViewController.instantiate()
         vc.coordinator = self

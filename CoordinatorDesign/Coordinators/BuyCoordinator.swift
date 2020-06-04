@@ -12,16 +12,13 @@ protocol BuyCoordinatorProtocol: Coordinator {
     
 }
 
-class BuyCoordinator {
+class BuyCoordinator: BuyCoordinatorProtocol {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
            self.navigationController = navigationController
     }
-}
-
-extension BuyCoordinator: BuyCoordinatorProtocol {
     
     func start() {
         let vc = BuyViewController.instantiate()

@@ -15,3 +15,10 @@ class CreateAccountViewController: UIViewController, Storyboarded {
         print("deinit - CreateAccountViewController")
     }
 }
+
+
+extension CreateAccountViewController: Coordinated {
+    func getCoordinator() -> Coordinator? {
+        return coordinator
+    }
+}
