@@ -9,10 +9,12 @@
 import UIKit
 
 protocol CreateAccountCoordinatorProtocol: Coordinator {
-    
+    func doneButtonTapped()
 }
 
 class CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
+    
+    
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -24,5 +26,9 @@ class CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
         let vc = CreateAccountViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func doneButtonTapped() {
+        navigationController.popViewController(animated: true)
     }
 }

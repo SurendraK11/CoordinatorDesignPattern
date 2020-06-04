@@ -14,6 +14,16 @@ class CreateAccountViewController: UIViewController, Storyboarded {
     deinit {
         print("deinit - CreateAccountViewController")
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Create Account"
+    }
+    
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        coordinator?.doneButtonTapped()
+    }
+    
 }
 
 

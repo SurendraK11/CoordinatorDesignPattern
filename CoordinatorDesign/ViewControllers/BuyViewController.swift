@@ -14,6 +14,17 @@ class BuyViewController: UIViewController, Storyboarded {
     deinit {
         print("deinit - BuyViewController")
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Buy Item"
+    }
+    
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        coordinator?.doneButtonTapped()
+    }
+    
+    
 }
 
 extension BuyViewController: Coordinated {

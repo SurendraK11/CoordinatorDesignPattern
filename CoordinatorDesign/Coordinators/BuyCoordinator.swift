@@ -9,7 +9,7 @@
 import UIKit
 
 protocol BuyCoordinatorProtocol: Coordinator {
-    
+    func doneButtonTapped()
 }
 
 class BuyCoordinator: BuyCoordinatorProtocol {
@@ -24,5 +24,9 @@ class BuyCoordinator: BuyCoordinatorProtocol {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func doneButtonTapped() {
+        navigationController.popViewController(animated: true)
     }
 }
