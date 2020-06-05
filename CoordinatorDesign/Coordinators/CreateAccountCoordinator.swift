@@ -14,7 +14,7 @@ protocol CreateAccountCoordinatorProtocol: Coordinator {
 
 class CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
     
-    
+    weak var parentCoordinator: Coordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -25,10 +25,15 @@ class CreateAccountCoordinator: CreateAccountCoordinatorProtocol {
     func start() {
         let vc = CreateAccountViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        let navigationVC = UINavigationController(rootViewController: vc)
+        navigationController.present(navigationVC, animated: true, completion: nil)
+        
     }
     
     func doneButtonTapped() {
-        navigationController.popViewController(animated: true)
+        navigationController.dismiss(animated: true) {
+            [weak self] in
+            self?.parentCoordinator?.childDidFinish(self)
+        }
     }
 }

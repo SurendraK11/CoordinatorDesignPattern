@@ -43,6 +43,7 @@ extension HomeCoordinator: Buying, AccountCreating {
     
     func createAccount() {
         let child = CreateAccountCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
         childCoordinators.append(child)
         child.start()
     }
